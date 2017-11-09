@@ -1,0 +1,6 @@
+/target/
+generator/**
+.project
+.classpath
+.settings
+.git
