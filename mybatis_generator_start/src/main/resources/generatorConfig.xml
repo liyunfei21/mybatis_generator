@@ -15,8 +15,8 @@
 		</commentGenerator>
 
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-			connectionURL="jdbc:mysql://120.27.17.206:3306/bigdata1"
-			userId="swd" password="swd12345">
+			connectionURL="jdbc:mysql://localhost:3306/bigdata1"
+			userId="root" password="root">
 		</jdbcConnection>
 
 		<javaTypeResolver>
@@ -24,23 +24,23 @@
 		</javaTypeResolver>
 
 		<javaModelGenerator targetPackage="com.zhenxue.bigdata.userserivce.entity"
-			targetProject="./src">
+			targetProject="generator/java">
 			<property name="enableSubPackages" value="true" />
 			<property name="trimStrings" value="true" />
 
 		</javaModelGenerator>
 
 		<sqlMapGenerator targetPackage="com.zhenxue.bigdata.userserivce.mapper.xml"
-			targetProject="./src">
+			targetProject="generator/java">
 			<property name="enableSubPackages" value="true" />
 		</sqlMapGenerator>
 
 		<javaClientGenerator type="XMLMAPPER"
-			targetPackage="com.zhenxue.bigdata.userserivce.mapper" targetProject="./src">
+			targetPackage="com.zhenxue.bigdata.userserivce.mapper" targetProject="generator/java">
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
 
-		<table schema="bigdata1" tableName="edu_user"/>
+		<table schema="bigdata1" tableName="user"/>
 
 
 
